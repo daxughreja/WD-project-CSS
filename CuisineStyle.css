@@ -5,30 +5,34 @@
 }
 
 body {
-    background-color: aliceblue;
-
-}
+    background-image: url(https://cdn141.picsart.com/332451108036201.jpg?to=crop&type=webp&r=580x773&q=85);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    font-size:17px ;
+    font-weight:20px ;
+ }
 
 .heading {
     font-size: 45px;
     text-align: center;
-    justify-content: center;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .heading-bottom {
     text-align: right;
-    justify-content: center;
     letter-spacing: 2px;
     margin-right: 265px;
 
 }
 
 .navbar {
-    display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
     padding: 15px;
     margin-top: 15px;
