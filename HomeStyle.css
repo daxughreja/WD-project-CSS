@@ -59,7 +59,7 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
     color: white;
-    transition: all 0.3s ease-in;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navelements li a:hover {
@@ -67,6 +67,7 @@ body {
     background-color: blue;
     color: white;
     font-size: 23px;
+    transform: scale(1.1); 
 }
 .footer {
     width: 100%;
@@ -113,6 +114,8 @@ img{
     box-shadow: 2px 4px 15px rgba(0,0,0,0.3);
     transform: transform 0.3s ease;
     margin-left: 20px;
+    opacity: 0;
+    animation: fadeInImage 1.5s forwards;
 }
 img:hover{
     cursor: pointer;
@@ -124,16 +127,8 @@ img:active{
 }.heading, .heading-bottom {
     animation: fadeIn 2s ease-in-out;
 }
-.navelements li a {
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-.navelements li a:hover {
-    color: #ff6347; 
-    transform: scale(1.1); 
-}
-img {
-    opacity: 0;
-    animation: fadeInImage 1.5s forwards;
+footer a:hover {
+    color: #ff6347;
 }
 @keyframes fadeIn {
     from {
@@ -154,20 +149,6 @@ img {
         opacity: 1;
     }
 }
-blockquote {
-    font-style: italic;
-    color: #2f4f4f;
-    border-left: 5px solid #ff6347;
-    padding-left: 10px;
-    margin: 20px 0;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out 0.5s forwards;
-}
-footer a:hover {
-    color: #ff6347;
-}
-
-
 @media screen and (max-width:600px){
     .navelements{
         display: block;

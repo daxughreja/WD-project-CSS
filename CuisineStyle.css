@@ -59,7 +59,7 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
     color: white;
-    transition: all 0.3s ease-in;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navelements li a:hover {
@@ -67,6 +67,7 @@ body {
     background-color: blue;
     color: white;
     font-size: 23px;
+    transform: scale(1.1);
 }
 
 
@@ -78,10 +79,10 @@ body {
     align-items: center;
     justify-content: left;
     color:antiquewhite;
-    margin-top: 15px;
     border-top: 10px solid gray;
-
-
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
 }
 
 .footer p {
@@ -118,6 +119,7 @@ img{
     box-shadow: 2px 4px 15px rgba(0,0,0,0.3);
     transform: transform 0.3s ease;
     margin-left: 20px;
+    animation: fadeInImage 1.5s forwards;
 }
 img:hover{
     cursor: pointer;
@@ -131,20 +133,6 @@ h1, h2, p {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
 }
-
-img {
-    opacity: 0;
-    animation: fadeInImage 1.5s forwards;
-}
-.navelements li a {
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.navelements li a:hover {
-    color: #ff6347; 
-    transform: scale(1.1);
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -164,25 +152,11 @@ img {
         opacity: 1;
     }
 }
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-footer a:hover {
-    color: #ff6347; 
-}
-html {
-    scroll-behavior: smooth;
-}
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
-
 table, th, td {
     border: 1px solid #ddd;
 }
