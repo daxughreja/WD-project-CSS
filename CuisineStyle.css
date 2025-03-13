@@ -127,6 +127,75 @@ img:active{
     transform:scale(1.1);
     transition: 0.3s;
 }
+h1, h2, p {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+img {
+    opacity: 0;
+    animation: fadeInImage 1.5s forwards;
+}
+.navelements li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navelements li a:hover {
+    color: #ff6347; 
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #ff6347; 
+}
+html {
+    scroll-behavior: smooth;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
 @media screen and (max-width:600px){
     .navelements{
         display: block;

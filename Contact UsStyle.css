@@ -127,6 +127,59 @@ img:active{
     transform:scale(1.1);
     transition: 0.3s;
 }
+input[type="text"], input[type="password"], input[type="file"], input[type="date"], input[type="time"], select, textarea {
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="time"]:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+input[type="submit"], input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+}
+body {
+    animation: fadeIn 1s ease-out;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+form {
+    animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+iframe {
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
 @media screen and (max-width:600px){
     .navelements{
         display: block;
